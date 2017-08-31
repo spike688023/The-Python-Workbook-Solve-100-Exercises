@@ -6,3 +6,10 @@ for letter in string.ascii_lowercase:
 
 
 #Video question
+
+"""
+這題真的要先偷看, 不然, 不知道要用string module,
+
+>>> for i in string.ascii_lowercase:
+...     print(i)
+"""
