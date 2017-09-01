@@ -8,3 +8,19 @@ import string
 with open("letters.txt", "w") as file:
     for letter in string.ascii_lowercase:
         file.write(letter + "\n")
+
+
+"""
+我的寫法是對的, 只不過, 它的語法有用到 with,
+
+這個語法有什麼差呢
+
+import string
+file = open("letters.txt","w")
+
+for i in string.ascii_lowercase:
+    print(i)
+    file.write(i+"\n")
+
+file.close()
+""'
