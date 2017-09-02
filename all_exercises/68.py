@@ -8,3 +8,8 @@ def vocabulary(word):
 
 word = input("Enter word: ").lower()
 print(vocabulary(word))
+
+
+"""
+做法，完全一樣，那就 不用特 別寫東西了。
+"""
