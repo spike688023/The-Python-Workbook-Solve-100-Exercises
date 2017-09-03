@@ -1,6 +1,12 @@
 #Create a script that lets the user create a password until they have satisfied three conditions:
 #Password contains at least one number, one uppercase letter and it is at least 5 chars long
 #Give the exact reason why the user has not created a correct password
+
+"""
+案，它這寫法很酷 哎，
+
+把要印的情況放到list中， 最後 再全部印出來。
+"""
 while True:
     notes = []
     psw = input("Enter password: ")
