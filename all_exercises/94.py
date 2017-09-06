@@ -1,5 +1,11 @@
 #Clean each line by removing s from https and adding a slash
 
+"""
+感覺, 內縮在 with 內, 可以知道, 目前是在對那個檔案做處理.
+
+跟我寫法差不多.
+"""
+
 with open("urls.txt", "r") as file:
     lines = file.readlines()
 
