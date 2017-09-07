@@ -1,9 +1,25 @@
+checklist = ["Portugal", "Germany", "Munster", "Spain"]
+checklist2 = []
+file = open("countries_raw.txt","r+")
+file2 = open("countries_spike.txt","w+")
+for i in file.readlines():
+    #print((i is not 'Top of Page\n'))
+    if len(i) >= 3 and i != 'Top of Page\n' : file2.write(i)
+
+#file.seek(0)
+for i in checklist:
+    file.seek(0)
+    if i in file.read(): checklist2.append(i)
+
+print(checklist2)
+file2.close()
+
 """
-依我看raw file的觀察, 
+依我看raw file的觀察,
 
-只要把空行刪了, 
+只要把空行刪了,
 
-以為只有單一個英文字的那一行, 也給刪了, 
+以為只有單一個英文字的那一行, 也給刪了,
 
 
 那就可以了.
@@ -36,23 +52,8 @@ AAAABBBBCCCC
 i != "Top of Page\n"    這樣寫可以
 
 
-好吧, 先這樣, 
+好吧, 先這樣,
 i is not "Top of Page\n" 就不行是為什麼
 
 """
 
-checklist = ["Portugal", "Germany", "Munster", "Spain"]
-checklist2 = []
-file = open("countries_raw.txt","r+")
-file2 = open("countries_spike.txt","w+")
-for i in file.readlines():
-    #print((i is not 'Top of Page\n'))
-    if len(i) >= 3 and i != 'Top of Page\n' : file2.write(i)
-
-#file.seek(0)
-for i in checklist:
-    file.seek(0)
-    if i in file.read(): checklist2.append(i)
-
-print(checklist2)
-file2.close()

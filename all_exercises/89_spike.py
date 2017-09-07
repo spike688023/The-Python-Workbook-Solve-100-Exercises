@@ -17,6 +17,11 @@ easy_install3 db.py
 countries是我用sqlitebrowser打開來看的，我想呢，應該 有辦 法，
 
 用command line 看。
+
+這段 的用 description ，我是怎麼找到的，
+
+用dir() 嗎?
+cols = [column[0] for column in query.description]
 """
 
 import sqlite3
