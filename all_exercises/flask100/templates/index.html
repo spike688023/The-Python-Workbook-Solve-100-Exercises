@@ -1,0 +1,16 @@
+<!doctype html>
+<title>Hello from Flask</title>
+
+{% if msg %}
+  <h1>{{ msg }} </h1>
+{% endif %}
+
+<form>
+<input type="text" name="user" placeholder="Enter username"><br>
+<input type="text" name="password" placeholder="Enter password"><br>
+<input type="submit" value="Submit">
+</form>
+
+{% for item in error %}
+  <h1>{{ item }} </h1>
+{% endfor %}
