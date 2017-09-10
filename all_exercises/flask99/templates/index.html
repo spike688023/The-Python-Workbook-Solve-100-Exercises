@@ -1,0 +1,15 @@
+<!doctype html>
+<title>Hello from Flask</title>
+{% if name %}
+  <h1>Hello {{ name }}!</h1>
+{% else %}
+  <h1>{{ back }} is written to 99_file.txt</h1>
+{% endif %}
+
+<form>
+What do you think today?<br>
+<input type="text" name="lines" placeholder="Enter a line"><br>
+<input type="submit" value="Submit">
+</form>
+
+

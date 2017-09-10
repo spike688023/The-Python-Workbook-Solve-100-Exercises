@@ -1,4 +1,16 @@
 #Create a program that asks the user to submit text through a GUI
+"""
+好拉，
+
+這題 沒什麼好講 的， 差不多。
+
+我寫的還完整一點。
+
+
+這裡，能用END  ，我不知道。
+entry.delete(0, END)
+
+"""
 
 from tkinter import *
 

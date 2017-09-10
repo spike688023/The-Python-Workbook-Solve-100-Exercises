@@ -1,4 +1,9 @@
 #Create a program that asks the user to submit text a web app
+"""
+沒什麼太大的差別，
+
+只是不知道，  html 這樣一個變收，可以直接拿來檔網頁。
+"""
 from flask import Flask, render_template_string, request
 app = Flask(__name__)
 html = """

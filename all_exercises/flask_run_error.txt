@@ -1,0 +1,54 @@
+
+Question1:   i get an error
+
+flask run
+
+get error below:
+RuntimeError: Click will abort further execution because Python 3 was configured to use ASCII as encoding for the environment.
+
+
+Solved:
+export LC_ALL=de_DE.utf-8
+export LANG=de_DE.utf-8
+
+
+Reference:
+http://click.pocoo.org/5/python3/
+
+
+Quesion2 :
+
+export FLASK_APP=yourapplication
+
+單一個檔案，可以直接寫檔名,
+然後跑 的時侯， 要在同個目録， 不然會說找不到。
+export FLASK_APP=99_reference.py
+
+沒有這個環境變數，我就寫一個來看看，
+PYTHONPATH="/Users/nickboy/Temp/flask/examples:$PYTHONPATH"
+export PYTHONPATH
+
+這樣就 能抓出，我目前這個環境變數的值了。
+abliarsecde-MacBookPro:all_exercises nickboy$ export |grep FLASK
+declare -x FLASK_APP="99_reference.py"
+
+
+package的結構， 要跑在有setup.py那層。
+
+又或者，如果有加個在 PYTHONPATH, 那就不用管flask run在那裡跑了，
+
+拿99_reference.py來試試 ， 先改 FLASK_APP的值，
+
+來看看，跑不跑 的成功， 然後再加到PYTHONPATH.
+
+
+因為是可以， 但有一點要注意，如果要跑 的是  xxx.py ，
+
+那FLASK_APP 只能給 xxx
+
+媽的，PYTHONPATH , 要指到很精準的位置哎， 那個package 在那裡，
+
+跟xxx.py在那裡， 就 要指到那裡，難怪我跑 hello 都可以，
+
+但99_ref都不行。
+
