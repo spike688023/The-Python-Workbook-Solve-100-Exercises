@@ -44,3 +44,7 @@ words_entry.focus()
 
 root.mainloop()
 
+"""
+Reference:
+http://www.tkdocs.com/tutorial/firstexample.html
+"""
